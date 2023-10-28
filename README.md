@@ -1,4 +1,5 @@
 # THM_Overpass-2-Hacked
+Part 1: Forensics, Analyse the pcap
 Since Overpass is a web application, http is what we want to filter.
 
 What was the URL of the page they used to upload a reverse shell?
@@ -18,3 +19,19 @@ Filter out the destination IP, then follow the TCP stream of the first packet wi
 How did the attacker establish persistence?
 Take a look at the rest of TCP stream, after gaining privileges, he was having a look at /etc/shadow, and clone a github repo. 
 ![image](https://github.com/QuanPham247/THM_Overpass-2-Hacked/assets/97132705/3d9897ad-4377-43c1-828a-5c0abad470ac)
+
+Using the fasttrack wordlist, how many of the system passwords were crackable?
+![image](https://github.com/QuanPham247/THM_Overpass-2-Hacked/assets/97132705/27e8b2d8-21a2-4230-a084-502bb5c6edd0)
+We're using John to crack passwords from the shadow file.
+
+Copy user's hashes to a text file and use john to crack it. 
+
+![image](https://github.com/QuanPham247/THM_Overpass-2-Hacked/assets/97132705/31844445-0cb2-43da-ac3d-4f9fe83edab1)
+
+
+Part 2: Research - Analyse the code.
+What's the default hash for the backdoor?
+https://github.com/NinjaJc01/ssh-backdoor/blob/master/main.go
+
+What's the hardcoded salt for the backdoor?
+Last line of code.
