@@ -26,7 +26,8 @@ We're using John to crack passwords from the shadow file.
 
 Copy user's hashes to a text file and use john to crack it. 
 
-![image](https://github.com/QuanPham247/THM_Overpass-2-Hacked/assets/97132705/31844445-0cb2-43da-ac3d-4f9fe83edab1)
+![image](https://github.com/QuanPham247/THM_Overpass-2-Hacked/assets/97132705/47ec7994-ffc2-4a87-b400-e4151c418401)
+
 
 
 Part 2: Research - Analyse the code.
@@ -35,3 +36,11 @@ https://github.com/NinjaJc01/ssh-backdoor/blob/master/main.go
 
 What's the hardcoded salt for the backdoor?
 Last line of code.
+
+
+What was the hash that the attacker used? - go back to the PCAP for this!
+backdoor -a ?
+
+Crack the hash using rockyou and a cracking tool of your choice. What's the password?
+John or hashcat.
+
