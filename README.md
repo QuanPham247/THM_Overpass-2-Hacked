@@ -10,4 +10,11 @@ We can see there is a POST request. Let's follow its HTTP stream
 
 What password did the attacker use to privesc?
 Based on the payload, we can see that it wants to open a reverse shell back to the attacker machine. 
+![image](https://github.com/QuanPham247/THM_Overpass-2-Hacked/assets/97132705/51609cab-7973-404a-b7e2-1742b2161d0e)
 
+Filter out the destination IP, then follow the TCP stream of the first packet with the destination port of 4242. 
+![image](https://github.com/QuanPham247/THM_Overpass-2-Hacked/assets/97132705/ba1d0cb4-71da-4059-a104-727387b891ee)
+
+How did the attacker establish persistence?
+Take a look at the rest of TCP stream, after gaining privileges, he was having a look at /etc/shadow, and clone a github repo. 
+![image](https://github.com/QuanPham247/THM_Overpass-2-Hacked/assets/97132705/3d9897ad-4377-43c1-828a-5c0abad470ac)
