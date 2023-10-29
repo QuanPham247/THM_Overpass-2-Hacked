@@ -1,5 +1,5 @@
 # THM_Overpass-2-Hacked
-Part 1: Forensics, Analyse the pcap
+**Part 1: Forensics, Analyse the pcap**
 Since Overpass is a web application, http is what we want to filter.
 
 What was the URL of the page they used to upload a reverse shell?
@@ -37,7 +37,7 @@ Copy user's hashes to a text file and use John to crack it.
 
 
 
-Part 2: Research - Analyse the code.
+**Part 2: Research - Analyse the code**
 What's the default hash for the backdoor?
 https://github.com/NinjaJc01/ssh-backdoor/blob/master/main.go
 
@@ -68,7 +68,7 @@ Copy the hash from question 3 and the salt from question 2, separated by a colon
 For this task, I'm using hashcat since John, for some reason, doesn't recognize the format.
 hashcat -m 1710 -a 0 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 
-Part 3: 
+**Part 3:** 
 The attacker defaced the website. What message did they leave as a heading?
 ![image](https://github.com/QuanPham247/THM_Overpass-2-Hacked/assets/97132705/b199e690-bfbd-4a91-b4f2-57bbbb6a1371)
 
