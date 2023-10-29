@@ -31,13 +31,14 @@ Using the fasttrack wordlist, how many of the system passwords were crackable?
 
 We're using John to crack passwords from the shadow file.
 
-Copy user's hashes to a text file and use John to crack it. 
+Copy the user's hashes to a text file and use John to crack it. 
 
 ![image](https://github.com/QuanPham247/THM_Overpass-2-Hacked/assets/97132705/47ec7994-ffc2-4a87-b400-e4151c418401)
 
 
 
-**Part 2: Research - Analyse the code**
+**Part 2: Research - Analyse the code**:
+
 What's the default hash for the backdoor?
 https://github.com/NinjaJc01/ssh-backdoor/blob/master/main.go
 
@@ -96,9 +97,9 @@ Specifies the -p option, will not reset the user id back to James.
 **P/s**: I really enjoyed this room, what an eye-opening and educational experience. 
 
 References: 
-https://www.youtube.com/watch?v=XtySdRYCbiY
-https://superuser.com/questions/532121/what-does-p-do-on-shell-script
-https://hashcat.net/wiki/doku.php?id=example_hashes
++ https://www.youtube.com/watch?v=XtySdRYCbiY
++ https://superuser.com/questions/532121/what-does-p-do-on-shell-script
++ https://hashcat.net/wiki/doku.php?id=example_hashes
 
 
 
